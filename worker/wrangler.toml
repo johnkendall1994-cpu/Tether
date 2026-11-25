@@ -6,7 +6,7 @@ keep_vars = true
 
 [[kv_namespaces]]
 binding = "TETHER_KV"
-id = "PASTE_YOUR_KV_ID_HERE"
+id = "7fdec54bf72e4a599730e55fb964fe2a"
 
 [[durable_objects.bindings]]
 name = "ROOMS"
