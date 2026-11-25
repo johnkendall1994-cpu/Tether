@@ -1,0 +1,17 @@
+name = "tether"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+# keep the TURN settings you already added in the Cloudflare dashboard
+keep_vars = true
+
+[[kv_namespaces]]
+binding = "TETHER_KV"
+id = "PASTE_YOUR_KV_ID_HERE"
+
+[[durable_objects.bindings]]
+name = "ROOMS"
+class_name = "Room"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Room"]
